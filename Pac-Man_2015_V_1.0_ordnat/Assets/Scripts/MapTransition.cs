@@ -17,26 +17,16 @@ public class MapTransition : MonoBehaviour {
     public bool testbool;
     public Object nextLevel;
 
-    GUIStyle storyStyle;
-
-    void Awake()
-    {
-        storyStyle.font.material.color = Color.red;
-
-    }
-
     void Update()
     {
         if (mapEnd && Input.GetKeyDown(KeyCode.Space))
         {
             Application.LoadLevel(nextLevel.name);
             mapEnd = false;
-            BeginFade(-1);
         }
 
         if (testbool)
         {
-            BeginFade(1);
             mapEnd = true;
         }
     }
@@ -45,12 +35,13 @@ public class MapTransition : MonoBehaviour {
     {
         if(col.gameObject.tag == "Player")
         {
-            BeginFade(1);
             mapEnd = true;
+            Application.LoadLevel(nextLevel.name);
+
         }
     }
 
-    void OnGUI()
+   /* void OnGUI()
     {
         alpha += fadeDir * fadeSpeed * Time.deltaTime;
         alpha = Mathf.Clamp01(alpha);
@@ -80,5 +71,5 @@ public class MapTransition : MonoBehaviour {
     {
         fadeDir = direction;
         return (fadeSpeed);
-    }
+    } */
 }
