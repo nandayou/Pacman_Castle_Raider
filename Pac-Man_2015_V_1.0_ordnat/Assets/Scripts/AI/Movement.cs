@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Movement : MonoBehaviour {
 
-    bool move;
+    bool move;  //Helt onödig!!
 
     // Floats.orward-wall detection. I found .505f to be more precise than .5f.
     float rayLengthZ = 0.505f; // This ray is for f
@@ -43,7 +43,7 @@ public class Movement : MonoBehaviour {
             }
         }
         
-            else if (hitinfo.collider.gameObject.tag == "NavPoint")
+            else if (hitinfo.collider.gameObject.tag == "navpoint")
             {
                 if (move)
                 {
