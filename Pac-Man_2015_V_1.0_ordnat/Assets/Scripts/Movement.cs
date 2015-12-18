@@ -63,7 +63,7 @@ public class Movement : MonoBehaviour {
         }
         else if (Input.GetKeyDown(KeyCode.S))
         {
-            Ray checkDir = new Ray(transform.position, Vector3.down);
+            Ray checkDir = new Ray(transform.position, Vector3.back);
             if (!Physics.Raycast(checkDir, rayLengthZ))
             {
                 moveDir = Vector3.back;
