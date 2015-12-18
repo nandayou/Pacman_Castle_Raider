@@ -22,7 +22,7 @@ public class Movement : MonoBehaviour {
     
     void Start()
     {
-        rayLengthZ = GetComponent<Renderer>().bounds.size.x;
+        rayLengthZ = GetComponent<Renderer>().bounds.size.x * 1.2f;
 
     }
 
@@ -74,7 +74,7 @@ public class Movement : MonoBehaviour {
         else if (Input.GetKeyDown(KeyCode.A))
         {
             Ray checkDir = new Ray(transform.position, Vector3.left);
-            if (!Physics.Raycast(checkDir, rayLengthZ))
+            if (!Physics.Raycast(checkDir, rayLengthX))
             {
                 moveDir = Vector3.left;
                 Debug.DrawRay(checkDir.origin, checkDir.direction, Color.red);
@@ -84,7 +84,7 @@ public class Movement : MonoBehaviour {
         else if (Input.GetKeyDown(KeyCode.D))
         {
             Ray checkDir = new Ray(transform.position, Vector3.right);
-            if (!Physics.Raycast(checkDir, rayLengthZ))
+            if (!Physics.Raycast(checkDir, rayLengthX))
             {
                 moveDir = Vector3.right;
                 Debug.DrawRay(checkDir.origin, checkDir.direction, Color.red);

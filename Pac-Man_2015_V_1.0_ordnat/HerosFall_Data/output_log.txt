@@ -19,7 +19,7 @@ Loading C:\Users\leafm_000\Documents\GameProjects\Pacman_Castle_Raider\Pac-Man_2
 Platform assembly: C:\Users\leafm_000\Documents\GameProjects\Pacman_Castle_Raider\Pac-Man_2015_V_1.0_ordnat\HerosFall_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\leafm_000\Documents\GameProjects\Pacman_Castle_Raider\Pac-Man_2015_V_1.0_ordnat\HerosFall_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\leafm_000\Documents\GameProjects\Pacman_Castle_Raider\Pac-Man_2015_V_1.0_ordnat\HerosFall_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.213 seconds
+- Completed reload, in  0.217 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
@@ -30,7 +30,17 @@ Platform assembly: C:\Users\leafm_000\Documents\GameProjects\Pacman_Castle_Raide
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 9840 -> priority: 1 
+  Thread -> id: e61c -> priority: 1 
+NullReferenceException: Object reference not set to an instance of an object
+  at MapTransition.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at MapTransition.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
 NullReferenceException: Object reference not set to an instance of an object
   at MapTransition.Update () [0x00000] in <filename unknown>:0 
  
