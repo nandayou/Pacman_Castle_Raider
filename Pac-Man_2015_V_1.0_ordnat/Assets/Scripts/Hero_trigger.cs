@@ -16,7 +16,7 @@ public class Hero_trigger : MonoBehaviour {
 
     void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.tag == "Point")
+        /*if (col.gameObject.tag == "Point")
         {
             Destroy(col.gameObject);
             points++;
@@ -27,8 +27,8 @@ public class Hero_trigger : MonoBehaviour {
                 lives++;
                 _points = 0;
             }
-        }
-        else if (col.gameObject.tag == "Ghost")
+        }*/
+        if (col.gameObject.tag == "Ghost")
         {
             transform.position = startPosition;
             lives--;
@@ -38,5 +38,11 @@ public class Hero_trigger : MonoBehaviour {
             Destroy(col.gameObject);
             Debug.Log("PowerUp");
         }
+       /* else if(col.gameObject.tag == "Key")
+        {
+            Debug.Log("Picked up key");
+            col.gameObject.transform.position = new Vector3(transform.position.x, transform.position.y + 1, transform.position.z);
+            col.gameObject.transform.parent = transform;
+        }*/
     }
 }
