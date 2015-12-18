@@ -4,62 +4,130 @@ using System.Collections;
 public class Movement : MonoBehaviour {
 
     bool move = false;
+    bool turn;
+    public GameObject heroModel;
 
     // Floats.orward-wall detection. I found .505f to be more precise than .5f.
-    float rayLengthZ = 0.505f; // This ray is for f
+    float rayLengthZ = 0.35f; // This ray is for f
 
     float speed = 1.5f;
     float rayLengthX = 0.6f; // The ray is cast from pacmans center, with 0.5f to closest SIDE-wall, so I wen
 
+    Vector3 moveDir;
+
+    Ray rayForward;
+    Ray rayBackward;
+    Ray rayRight;
+    Ray rayLeft;
+    
+    void Start()
+    {
+        rayLengthZ = GetComponent<Renderer>().bounds.size.x;
+
+    }
 
     void Update()
     {
-
-        //First, I initialise three Rays going forward and sideways to check wall-collisions.
-        Ray rayForward = new Ray(transform.position, transform.TransformDirection(0.0f, 0.5f, 0.5f));
-        Ray rayBackward = new Ray(transform.position, transform.TransformDirection(0.0f, 0.5f, -0.5f)); // Vector for direction is set manually since I want it to reach a bit behind pacmans center,
-        Ray rayRight = new Ray(transform.position, transform.TransformDirection(0.6f, 0.0f, -0.1f));    // to only allow turning when he is more centered = more realistic.
-        Ray rayLeft = new Ray(transform.position, transform.TransformDirection(-0.6f, 0.0f, -0.1f));
+        /*
         RaycastHit hitinfo;
 
-        Debug.DrawRay(transform.position, transform.TransformDirection(0.0f, 0.5f, 0.5f));
+        rayForward = new Ray(transform.position, Vector3.forward);
+        rayBackward = new Ray(transform.position, Vector3.back); 
+        rayRight = new Ray(transform.position, Vector3.right);
+        rayLeft = new Ray(transform.position, Vector3.left); */
 
+        transform.Translate(moveDir * Time.deltaTime * speed);
 
+        if(moveDir != Vector3.zero)
+        {
+            heroModel.transform.rotation = Quaternion.Lerp(heroModel.transform.rotation, Quaternion.LookRotation(moveDir), 0.4f);
+        }
+        Debug.DrawRay(transform.position, moveDir, Color.red);
+
+        if (Physics.Raycast(transform.position, moveDir, rayLengthZ))
+        {
+            moveDir = Vector3.zero;
+        }
+
+        //Testcode---------------------------
+
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            Ray checkDir = new Ray(transform.position, Vector3.forward);
+            if(!Physics.Raycast(checkDir, rayLengthZ))
+            {
+                moveDir = Vector3.forward;
+                Debug.DrawRay(checkDir.origin, checkDir.direction, Color.red);
+
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.S))
+        {
+            Ray checkDir = new Ray(transform.position, Vector3.back);
+            if (!Physics.Raycast(checkDir, rayLengthZ))
+            {
+                moveDir = Vector3.back;
+                Debug.DrawRay(checkDir.origin, checkDir.direction, Color.red);
+
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.A))
+        {
+            Ray checkDir = new Ray(transform.position, Vector3.left);
+            if (!Physics.Raycast(checkDir, rayLengthZ))
+            {
+                moveDir = Vector3.left;
+                Debug.DrawRay(checkDir.origin, checkDir.direction, Color.red);
+
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.D))
+        {
+            Ray checkDir = new Ray(transform.position, Vector3.right);
+            if (!Physics.Raycast(checkDir, rayLengthZ))
+            {
+                moveDir = Vector3.right;
+                Debug.DrawRay(checkDir.origin, checkDir.direction, Color.red);
+
+            }
+        }
+
+        //-----------------------------------
+
+        /*
         if (!Physics.Raycast(rayForward, out hitinfo, rayLengthZ))
         {
-            if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W) || move)
+            if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
             {
-                transform.Translate(Vector3.forward * Time.deltaTime * speed);
+                moveDir = Vector3.forward;
                 move = true;
             }
         }
 
-
-        // Pacman also needs a function to turn around.
+        
         if (!Physics.Raycast(rayBackward, out hitinfo, rayLengthZ))
         {
             if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
             {
-                transform.Rotate(Vector3.down * 180.0f);
+                moveDir = Vector3.back;
             }
         }
 
-        // This checks for any walls to the left, which disallows a left-turn.
         if (!Physics.Raycast(rayLeft, rayLengthX))
         {
             if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
             {
-                transform.Rotate(Vector3.down * 90.0f);
+                moveDir = Vector3.left;
 
             }
         }
-        // This checks for any walls to the right, which disallows a right-turn.
+
         if (!Physics.Raycast(rayRight, rayLengthX))
         {
             if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
             {
-                transform.Rotate(Vector3.up * 90.0f);
+                moveDir = Vector3.right;
             }
-        }
+        } */
     }
 }

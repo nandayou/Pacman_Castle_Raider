@@ -1,21 +1,21 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class MapTransition : MonoBehaviour {
 
-    public Texture2D fadeColor;
-    public Texture2D storyImage;
-    public Texture2D border;
-
-    public float fadeSpeed;
-    bool sceneStart;
-
-    float alpha;
-    int fadeDir = -1;
+    public Image fadeColor;
+    public Image storyImage;
+    public Text pressSpace;
 
     bool mapEnd;
-    public bool testbool;
     public Object nextLevel;
+
+    void Start()
+    {
+        pressSpace.CrossFadeAlpha(0f, 0f, true);
+        storyImage.CrossFadeAlpha(0f, 0f, true);
+    }
 
     void Update()
     {
@@ -23,11 +23,7 @@ public class MapTransition : MonoBehaviour {
         {
             Application.LoadLevel(nextLevel.name);
             mapEnd = false;
-        }
-
-        if (testbool)
-        {
-            mapEnd = true;
+            Time.timeScale = 1;
         }
     }
 
@@ -36,40 +32,26 @@ public class MapTransition : MonoBehaviour {
         if(col.gameObject.tag == "Player")
         {
             mapEnd = true;
-            Application.LoadLevel(nextLevel.name);
-
+            Time.timeScale = 0;
         }
     }
 
-   /* void OnGUI()
+    void OnGUI()
     {
-        alpha += fadeDir * fadeSpeed * Time.deltaTime;
-        alpha = Mathf.Clamp01(alpha);
-
-        Rect screenRect = (new Rect(0f, 0f, Screen.width, Screen.height));
-
-        Color color = new Color(GUI.color.r, GUI.color.g, GUI.color.b, alpha);
+        
         GUI.depth = -1000;
-       // GUI.DrawTexture(new Rect(0f, 0f, Screen.width, Screen.height), fadeColor);
 
+        if (!mapEnd)
+        {
+            fadeColor.CrossFadeAlpha(0f, 2f, true);
+        }
+        else if (mapEnd)
+        {
+            fadeColor.CrossFadeAlpha(2f, 2f, true);
+            storyImage.CrossFadeAlpha(2f, 2f, true);
+            pressSpace.CrossFadeAlpha(2f, 2f, true);
+            
 
-
-        GUI.DrawTexture(screenRect, fadeColor);
-
-        GUI.Label(new Rect(screenRect.center.x - 150, screenRect.height / 8 * 7, 300, 30), "Press Space to continue");
-
-
-
-        //GUI.DrawTexture(new Rect(Screen.width / 4, Screen.height / 4, Screen.width / 2, Screen.height / 2), storyImage);
-        //GUI.DrawTexture(new Rect(Screen.width / 4, Screen.height / 4, Screen.width / 2, Screen.height / 2), border);
-        //GUI.Label(new Rect(Screen.width / 2 - 150, Screen.height / 8 * 6, 300, 100), "Press Space to continue");
-
-
+        }
     }
-
-    public float BeginFade(int direction)
-    {
-        fadeDir = direction;
-        return (fadeSpeed);
-    } */
 }

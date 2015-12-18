@@ -1,10 +1,14 @@
 fileFormatVersion: 2
 guid: e0594fbf94c00ae47b951c716c6d3919
-timeCreated: 1449832431
+timeCreated: 1450353197
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - fadeColor: {fileID: 2800000, guid: 8aea40ad73a35ca489a1448b5882c4c2, type: 3}
+  - storyImage: {instanceID: 0}
+  - border: {instanceID: 0}
+  - nextLevel: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
