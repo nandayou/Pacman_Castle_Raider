@@ -6,6 +6,7 @@ public class Point : MonoBehaviour {
     public float rotationSpeed = 100;
     bool magnet;
     public AudioClip pickUpSound;
+    public GameObject key;
 
     void Update()
     {
@@ -21,6 +22,12 @@ public class Point : MonoBehaviour {
             {
                 PlaySound();
                 Destroy(gameObject);
+                int points = GameObject.FindGameObjectsWithTag("Point").Length;
+                if(points == 1)
+                {
+                    GameObject _key = Instantiate(key, new Vector3(transform.position.x, transform.position.y + 1, transform.position.z), Quaternion.identity) as GameObject;
+                    _key.transform.parent = col.gameObject.transform;
+                }
             }
         }
     }

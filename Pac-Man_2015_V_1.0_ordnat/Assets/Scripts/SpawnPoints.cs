@@ -21,6 +21,6 @@ public class SpawnPoints : MonoBehaviour {
             GameObject _point = Instantiate(pointVisual, new Vector3(point.transform.position.x, point.transform.position.y + 0.2f, point.transform.position.z), Quaternion.identity) as GameObject;
             _point.transform.parent = transform;
         }
-        Debug.Log(points.Length);
+        Debug.Log(points.Length + " points on this level");
     }
 }

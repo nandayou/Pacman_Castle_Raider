@@ -4,43 +4,52 @@ using System.Collections;
 public class Movement : MonoBehaviour {
 
     bool move = false;
+    bool turn;
+    public GameObject heroModel;
 
     // Floats.orward-wall detection. I found .505f to be more precise than .5f.
-    float rayLengthZ = 0.505f; // This ray is for f
+    float rayLengthZ = 0.6f; // This ray is for f
 
     float speed = 1.5f;
     float rayLengthX = 0.6f; // The ray is cast from pacmans center, with 0.5f to closest SIDE-wall, so I wen
 
+    Vector3 moveDir;
+
+    Ray rayForward;
+    Ray rayBackward;
+    Ray rayRight;
+    Ray rayLeft;
 
     void Update()
     {
-
-        //First, I initialise three Rays going forward and sideways to check wall-collisions.
-        Ray rayForward = new Ray(transform.position, transform.TransformDirection(0.0f, 0.5f, 0.5f));
-        Ray rayBackward = new Ray(transform.position, transform.TransformDirection(0.0f, 0.5f, -0.5f)); // Vector for direction is set manually since I want it to reach a bit behind pacmans center,
-        Ray rayRight = new Ray(transform.position, transform.TransformDirection(0.6f, 0.0f, -0.1f));    // to only allow turning when he is more centered = more realistic.
-        Ray rayLeft = new Ray(transform.position, transform.TransformDirection(-0.6f, 0.0f, -0.1f));
         RaycastHit hitinfo;
 
-        Debug.DrawRay(transform.position, transform.TransformDirection(0.0f, 0.5f, 0.5f));
+        rayForward = new Ray(transform.position, Vector3.forward);
+        rayBackward = new Ray(transform.position, Vector3.back); 
+        rayRight = new Ray(transform.position, Vector3.right);
+        rayLeft = new Ray(transform.position, Vector3.left);
 
+        transform.Translate(moveDir * Time.deltaTime * speed);
+
+        if(moveDir != Vector3.zero)
+            heroModel.transform.rotation = Quaternion.Lerp(heroModel.transform.rotation, Quaternion.LookRotation(moveDir), 0.4f);
 
         if (!Physics.Raycast(rayForward, out hitinfo, rayLengthZ))
         {
-            if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W) || move)
+            if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
             {
-                transform.Translate(Vector3.forward * Time.deltaTime * speed);
+                moveDir = Vector3.forward;
                 move = true;
             }
         }
 
-
-        // Pacman also needs a function to turn around.
+        
+        // Pacman also needs a function to turn around. 
         if (!Physics.Raycast(rayBackward, out hitinfo, rayLengthZ))
         {
             if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
             {
-                transform.Rotate(Vector3.down * 180.0f);
+                moveDir = Vector3.back;
             }
         }
 
@@ -49,7 +58,7 @@ public class Movement : MonoBehaviour {
         {
             if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
             {
-                transform.Rotate(Vector3.down * 90.0f);
+                moveDir = Vector3.left;
 
             }
         }
@@ -58,8 +67,21 @@ public class Movement : MonoBehaviour {
         {
             if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
             {
-                transform.Rotate(Vector3.up * 90.0f);
+                moveDir = Vector3.right;
+
             }
+        }
+    }
+
+    void OnTriggerEnter(Collider col)
+    {
+        if(col.gameObject.tag == "navpoint")
+        {
+            turn = true;
+        }
+        else
+        {
+            turn = false;
         }
     }
 }
