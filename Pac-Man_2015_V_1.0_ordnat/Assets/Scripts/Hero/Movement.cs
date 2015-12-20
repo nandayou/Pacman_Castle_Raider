@@ -10,7 +10,7 @@ public class Movement : MonoBehaviour {
     // Floats.orward-wall detection. I found .505f to be more precise than .5f.
     float rayLengthZ = 0.35f; // This ray is for f
 
-    float speed = 1.5f;
+    public float speed = 1.5f;
     float rayLengthX = 0.6f; // The ray is cast from pacmans center, with 0.5f to closest SIDE-wall, so I wen
 
     Vector3 moveDir;
@@ -23,7 +23,6 @@ public class Movement : MonoBehaviour {
     void Start()
     {
         rayLengthZ = GetComponent<Renderer>().bounds.size.x * 1.2f;
-
     }
 
     void Update()
