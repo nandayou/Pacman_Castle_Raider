@@ -13,7 +13,7 @@ public class Movement : MonoBehaviour {
     public float speed = 1.5f;
     float rayLengthX = 0.6f; // The ray is cast from pacmans center, with 0.5f to closest SIDE-wall, so I wen
 
-    Vector3 moveDir;
+    [HideInInspector] public Vector3 moveDir;
 
     Ray rayForward;
     Ray rayBackward;
@@ -35,7 +35,8 @@ public class Movement : MonoBehaviour {
         rayRight = new Ray(transform.position, Vector3.right);
         rayLeft = new Ray(transform.position, Vector3.left); */
 
-        transform.Translate(moveDir * Time.deltaTime * speed);
+        //transform.Translate(moveDir * Time.deltaTime * speed);
+        GetComponent<Rigidbody>().velocity = moveDir * Time.deltaTime * speed;
 
         if(moveDir != Vector3.zero)
         {
