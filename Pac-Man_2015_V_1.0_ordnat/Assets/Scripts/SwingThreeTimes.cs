@@ -2,25 +2,31 @@
 using System.Collections;
 
 public class SwingThreeTimes : MonoBehaviour {
-	public int swingpower;
+	public int swingpower = 0;
 	// Use this for initialization
-	void Start () {
-		ICanSwingThreeTimes ();
+
+//	void Start(){
+//		ICanSwingThreeTimes();  //This is for testing, call ICanSwingThreeTimes when pacman gains power
+//	}
+
+	void Update () {
+		if (Input.GetKeyDown (KeyCode.F)) 
+		{
+			StartCoroutine (StartSwing ());
+		}
 	}
 
 	public void ICanSwingThreeTimes(){
 		swingpower = 3;
-		StartCoroutine (StartSwing ());
 	}
 
 	IEnumerator StartSwing()
 	{
-		while (swingpower > 0) {
-			if (Input.GetKeyDown (KeyCode.F)) {
+		if(swingpower >= 1) 
+		{
 				GetComponent<Animation> ().Play ();
 				swingpower -= 1;
-			}
+				yield return new WaitForSeconds(2f);
 		}
-		yield return new WaitForSeconds(1f);
 	}
 }
