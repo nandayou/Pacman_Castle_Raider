@@ -8,16 +8,16 @@ public class Kill_Hero : MonoBehaviour {
 
 	void Start ()
     {
+        //Find hero
         hero = GameObject.FindGameObjectWithTag("Player");
         startPosition = hero.transform.position;
 	}
 	
+    //If colliding with hero trigger, put Hero at his start position
 	void OnTriggerEnter(Collider col)
     {
-        Debug.Log(col.name);
         if(col.gameObject == hero)
         {
-            Debug.Log("hallå");
             hero.transform.position = startPosition;
         }
     }

@@ -18,7 +18,7 @@ public class BloodOnCollision : MonoBehaviour {
 
         }
     }
-
+    //When collidion with an enemy trigger, instantiate particlesystem and destroy it after 1 second
     void OnTriggerEnter(Collider col)
     {
         if (col.gameObject.tag == "Enemy")
