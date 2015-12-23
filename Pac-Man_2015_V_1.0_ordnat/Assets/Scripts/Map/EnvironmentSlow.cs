@@ -14,6 +14,7 @@ public class EnvironmentSlow : MonoBehaviour {
         originalSpeed = hero.GetComponent<Movement>().speed;
     }
 
+    //When hero moves inside the trigger, he will be slowed
     void OnTriggerEnter(Collider col)
     {
         if(col.gameObject == hero)
@@ -22,6 +23,7 @@ public class EnvironmentSlow : MonoBehaviour {
         }
     }
 
+    //When hero exits the trigger, heros speed will be set to the default speed
     void OnTriggerExit()
     {
         hero.GetComponent<Movement>().speed = originalSpeed;

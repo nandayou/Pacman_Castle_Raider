@@ -2,9 +2,8 @@
 using System.Collections;
 
 public class Inventory : MonoBehaviour {
-
-    bool weapon = false;
-
+    
+    //Just to keep track of the key
     public GameObject key;
 
 

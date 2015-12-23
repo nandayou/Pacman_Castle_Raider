@@ -27,30 +27,23 @@ public class Movement : MonoBehaviour {
 
     void Update()
     {
-        /*
-        RaycastHit hitinfo;
-
-        rayForward = new Ray(transform.position, Vector3.forward);
-        rayBackward = new Ray(transform.position, Vector3.back); 
-        rayRight = new Ray(transform.position, Vector3.right);
-        rayLeft = new Ray(transform.position, Vector3.left); */
-
-        //transform.Translate(moveDir * Time.deltaTime * speed);
+        //The movement
         GetComponent<Rigidbody>().velocity = moveDir * Time.deltaTime * speed;
 
+        //if Hero is moving, move towards movedir
         if(moveDir != Vector3.zero)
         {
             heroModel.transform.rotation = Quaternion.Lerp(heroModel.transform.rotation, Quaternion.LookRotation(moveDir), 0.4f);
         }
-        Debug.DrawRay(transform.position, moveDir, Color.red);
-
+        
+        //If there is a wall right ahead of Hero, stop movement
         if (Physics.Raycast(transform.position, moveDir, rayLengthZ))
         {
             moveDir = Vector3.zero;
         }
 
-        //Testcode---------------------------
 
+        //When player uses inputs, check if there is a wall in the way and change moveDir if it isnt
         if (Input.GetKeyDown(KeyCode.W))
         {
             Ray checkDir = new Ray(transform.position, Vector3.forward);
@@ -91,43 +84,5 @@ public class Movement : MonoBehaviour {
 
             }
         }
-
-        //-----------------------------------
-
-        /*
-        if (!Physics.Raycast(rayForward, out hitinfo, rayLengthZ))
-        {
-            if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
-            {
-                moveDir = Vector3.forward;
-                move = true;
-            }
-        }
-
-        
-        if (!Physics.Raycast(rayBackward, out hitinfo, rayLengthZ))
-        {
-            if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
-            {
-                moveDir = Vector3.back;
-            }
-        }
-
-        if (!Physics.Raycast(rayLeft, rayLengthX))
-        {
-            if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
-            {
-                moveDir = Vector3.left;
-
-            }
-        }
-
-        if (!Physics.Raycast(rayRight, rayLengthX))
-        {
-            if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
-            {
-                moveDir = Vector3.right;
-            }
-        } */
     }
 }

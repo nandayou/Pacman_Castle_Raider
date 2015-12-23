@@ -11,12 +11,14 @@ public class MapTransition : MonoBehaviour {
     bool mapEnd;
     public Object nextLevel;
 
+    //Starts by hiding the pressspace text and storyimage
     void Start()
     {
         pressSpace.CrossFadeAlpha(0f, 0f, true);
         storyImage.CrossFadeAlpha(0f, 0f, true);
     }
 
+    //Checks exit is reached and waits for player to press space. When pressed, load next scene
     void Update()
     {
         if (mapEnd && Input.GetKeyDown(KeyCode.Space))
@@ -27,6 +29,7 @@ public class MapTransition : MonoBehaviour {
         }
     }
 
+    //If player collides with trigger, the map is over and time is paused
     void OnTriggerEnter(Collider col)
     {
         if(col.gameObject.tag == "Player")
@@ -41,6 +44,7 @@ public class MapTransition : MonoBehaviour {
         
         GUI.depth = -1000;
 
+        //Handles the fade of everything, including fade in and fade out
         if (!mapEnd)
         {
             fadeColor.CrossFadeAlpha(0f, 2f, true);
