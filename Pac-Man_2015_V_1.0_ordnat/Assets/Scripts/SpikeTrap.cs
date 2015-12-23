@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class SpikeTrap : MonoBehaviour {
-	public float delayedSpikeTime;
+
 
 	void Start () {
 		StartCoroutine (StartSpike ());
