@@ -8,9 +8,8 @@ public class ProjectileCollider : MonoBehaviour {
 		if (col.gameObject.name == "Wall_Turn (12)") {
 			Destroy(projectile);
 		}
-//		if (col.gameObject.name == "Alpha_Player") {
-//			Destroy(col.gameObject);
-//			Destroy (projectile);
-//		}
+		if (col.gameObject.name == "Alpha_Player") {
+			Destroy (projectile);
+		}
 	}
 }

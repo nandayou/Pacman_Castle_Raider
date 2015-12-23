@@ -2,12 +2,8 @@
 using System.Collections;
 
 public class SwingThreeTimes : MonoBehaviour {
-	public int swingpower = 0;
-	// Use this for initialization
 
-//	void Start(){
-//		ICanSwingThreeTimes();  //This is for testing, call ICanSwingThreeTimes when pacman gains power
-//	}
+	public int swingpower = 0;
 
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.F)) 
@@ -16,6 +12,7 @@ public class SwingThreeTimes : MonoBehaviour {
 		}
 	}
 
+	//call this funktion when pacman gains power
 	public void ICanSwingThreeTimes(){
 		swingpower = 3;
 	}
