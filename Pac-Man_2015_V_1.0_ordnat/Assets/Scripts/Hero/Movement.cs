@@ -1,28 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Movement : MonoBehaviour {
+public class Movement : MonoBehaviour
+{
+    public GameObject heroModel;            //The model that will rotate with the movement
+    public float speed = 1.5f;              //The speed of Hero
 
-    bool move = false;
-    bool turn;
-    public GameObject heroModel;
+    [HideInInspector]
+    public Vector3 moveDir;                 //The direction hero is moving
 
-    // Floats.orward-wall detection. I found .505f to be more precise than .5f.
-    float rayLengthZ = 0.35f; // This ray is for f
+    private float _rayLength = 0.6f;        //Ray length
+    private float _pacSize;                 //The size of the attached to Hero
 
-    public float speed = 1.5f;
-    float rayLengthX = 0.6f; // The ray is cast from pacmans center, with 0.5f to closest SIDE-wall, so I wen
-
-    [HideInInspector] public Vector3 moveDir;
-
-    Ray rayForward;
-    Ray rayBackward;
-    Ray rayRight;
-    Ray rayLeft;
-    
     void Start()
     {
-        rayLengthZ = GetComponent<Renderer>().bounds.size.x * 1.2f;
+        _pacSize = GetComponent<SphereCollider>().bounds.size.x;
     }
 
     void Update()
@@ -30,59 +22,52 @@ public class Movement : MonoBehaviour {
         //The movement
         GetComponent<Rigidbody>().velocity = moveDir * Time.deltaTime * speed;
 
-        //if Hero is moving, move towards movedir
-        if(moveDir != Vector3.zero)
+        //if Hero is moving, move towards moveDir
+        if (moveDir != Vector3.zero)
         {
             heroModel.transform.rotation = Quaternion.Lerp(heroModel.transform.rotation, Quaternion.LookRotation(moveDir), 0.4f);
         }
-        
+
         //If there is a wall right ahead of Hero, stop movement
-        if (Physics.Raycast(transform.position, moveDir, rayLengthZ))
+        if (Physics.Raycast(transform.position, moveDir, _rayLength / 2))
         {
             moveDir = Vector3.zero;
         }
 
 
-        //When player uses inputs, check if there is a wall in the way and change moveDir if it isnt
-        if (Input.GetKeyDown(KeyCode.W))
+        //When player uses inputs, check if there is a wall in the way and change moveDir if it isn't
+        if (Input.GetKey(KeyCode.W) && CheckIfOpen(Vector3.forward))
         {
-            Ray checkDir = new Ray(transform.position, Vector3.forward);
-            if(!Physics.Raycast(checkDir, rayLengthZ))
-            {
-                moveDir = Vector3.forward;
-                Debug.DrawRay(checkDir.origin, checkDir.direction, Color.red);
-
-            }
+            moveDir = Vector3.forward;
         }
-        else if (Input.GetKeyDown(KeyCode.S))
+        else if (Input.GetKey(KeyCode.S) && CheckIfOpen(Vector3.back))
         {
-            Ray checkDir = new Ray(transform.position, Vector3.back);
-            if (!Physics.Raycast(checkDir, rayLengthZ))
-            {
-                moveDir = Vector3.back;
-                Debug.DrawRay(checkDir.origin, checkDir.direction, Color.red);
-
-            }
+            moveDir = Vector3.back;
         }
-        else if (Input.GetKeyDown(KeyCode.A))
+        else if (Input.GetKey(KeyCode.A) && CheckIfOpen(Vector3.left))
         {
-            Ray checkDir = new Ray(transform.position, Vector3.left);
-            if (!Physics.Raycast(checkDir, rayLengthX))
-            {
-                moveDir = Vector3.left;
-                Debug.DrawRay(checkDir.origin, checkDir.direction, Color.red);
-
-            }
+            moveDir = Vector3.left;
         }
-        else if (Input.GetKeyDown(KeyCode.D))
+        else if (Input.GetKey(KeyCode.D) && CheckIfOpen(Vector3.right))
         {
-            Ray checkDir = new Ray(transform.position, Vector3.right);
-            if (!Physics.Raycast(checkDir, rayLengthX))
-            {
-                moveDir = Vector3.right;
-                Debug.DrawRay(checkDir.origin, checkDir.direction, Color.red);
+            moveDir = Vector3.right;
+        }
+    }
 
-            }
+    bool CheckIfOpen(Vector3 direction)
+    {
+        Ray checkDirFront = new Ray(new Vector3(transform.position.x + _pacSize / 2 * direction.z, transform.position.y, transform.position.z + _pacSize / 2 * direction.x), direction);
+        Ray checkDirBack = new Ray(new Vector3(transform.position.x - _pacSize / 2 * direction.z, transform.position.y, transform.position.z - _pacSize / 2 * direction.x), direction);
+        Ray checkDirMiddle = new Ray(transform.position, direction);
+
+
+        if (!Physics.Raycast(checkDirFront, _rayLength) && !Physics.Raycast(checkDirBack, _rayLength) && !Physics.Raycast(checkDirMiddle, _rayLength))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 }
