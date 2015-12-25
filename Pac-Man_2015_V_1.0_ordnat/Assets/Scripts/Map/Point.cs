@@ -8,6 +8,7 @@ public class Point : MonoBehaviour
     public AudioClip pickUpSound;
     public float pointVolume = 0.5f;
     public GameObject key;
+    public bool mapRequiresKey;
 
     private bool _visible = false;
     private string _originalName;
@@ -31,7 +32,7 @@ public class Point : MonoBehaviour
 
     void Update()
     {
-        //Rotates the gameobject
+        //Rotates the game object
         if (_visible)
             transform.Rotate(Vector3.up * Time.deltaTime * rotationSpeed);
     }
@@ -44,13 +45,13 @@ public class Point : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, col.gameObject.transform.position, Time.deltaTime * 1.5f);
             if (Vector3.Distance(transform.position, col.gameObject.transform.position) < 0.1)
             {
-                //Play sound, destroy gameobject and check how many points are remaining
+                //Play sound, destroy game object and check how many points are remaining
                 PlaySound();
                 Destroy(gameObject);
                 int points = GameObject.FindGameObjectsWithTag("Point").Length;
 
                 //If this is the last point on the map and hero picks it up, give Hero the key
-                if (points == 1)
+                if (points == 1 && mapRequiresKey)
                 {
                     GameObject _key = Instantiate(key, new Vector3(transform.position.x, transform.position.y + 1, transform.position.z), Quaternion.identity) as GameObject;
                     _key.transform.parent = col.gameObject.transform;
@@ -60,7 +61,7 @@ public class Point : MonoBehaviour
         }
     }
 
-    //Creates an object at the gameobjects location, play sound and then destroy
+    //Creates an object at the game objects location, play sound and then destroy
     void PlaySound()
     {
         AudioSource.PlayClipAtPoint(pickUpSound, transform.position, pointVolume);
