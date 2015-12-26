@@ -35,6 +35,12 @@ public class Point : MonoBehaviour
         //Rotates the game object
         if (_visible)
             transform.Rotate(Vector3.up * Time.deltaTime * rotationSpeed);
+
+        //In case gameObject falls through the world, destroy it
+        if (transform.position.y < -1f)
+        {
+            Destroy(gameObject);
+        }
     }
 
     //if player collides with the trigger, move towards the player and then destroy when close enough.
