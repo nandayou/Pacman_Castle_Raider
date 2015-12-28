@@ -1,49 +1,52 @@
+Mono path[0] = 'C:/Users/leafm_000/Documents/GameProjects/Pacman_Castle_Raider/Pac-Man_2015_V_1.0_ordnat/HerosFall_Data/Managed'
+Mono path[1] = 'C:/Users/leafm_000/Documents/GameProjects/Pacman_Castle_Raider/Pac-Man_2015_V_1.0_ordnat/HerosFall_Data/Mono'
+Mono config path = 'C:/Users/leafm_000/Documents/GameProjects/Pacman_Castle_Raider/Pac-Man_2015_V_1.0_ordnat/HerosFall_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/leafm_000/Documents/GameProjects/Pacman_Castle_Raider/Pac-Man_2015_V_1.0_ordnat/HerosFall_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55449
+Multi-casting "[IP] 192.168.1.104 [Port] 55449 [Flags] 3 [Guid] 2085800263 [EditorId] 286665674 [Version] 1048832 [Id] WindowsPlayer(AlexanderPC) [Debug] 1" to [225.0.0.222:54997]...
+Waiting for connection from host on [192.168.1.104:55449]...
+PlayerConnection accepted from [192.168.1.104] handle:0x278
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,defer=y,address=0.0.0.0:56263
+PlayerConnection already initialized - listening to [192.168.1.104:55449]
 Initialize engine version: 5.2.3f1 (f3d16a1fa2dd)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: Intel(R) HD Graphics 4600 (ID=0x416)
+    Renderer: Intel(R) HD Graphics 5500 (ID=0x1616)
     Vendor:   Intel
     VRAM:     128 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: E:\Castle_Raiders\Pacman_Castle_Raider\Pac-Man_2015_V_1.0_ordnat\HerosFall_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading E:\Castle_Raiders\Pacman_Castle_Raider\Pac-Man_2015_V_1.0_ordnat\HerosFall_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: E:\Castle_Raiders\Pacman_Castle_Raider\Pac-Man_2015_V_1.0_ordnat\HerosFall_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading E:\Castle_Raiders\Pacman_Castle_Raider\Pac-Man_2015_V_1.0_ordnat\HerosFall_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: E:\Castle_Raiders\Pacman_Castle_Raider\Pac-Man_2015_V_1.0_ordnat\HerosFall_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading E:\Castle_Raiders\Pacman_Castle_Raider\Pac-Man_2015_V_1.0_ordnat\HerosFall_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: E:\Castle_Raiders\Pacman_Castle_Raider\Pac-Man_2015_V_1.0_ordnat\HerosFall_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading E:\Castle_Raiders\Pacman_Castle_Raider\Pac-Man_2015_V_1.0_ordnat\HerosFall_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: E:\Castle_Raiders\Pacman_Castle_Raider\Pac-Man_2015_V_1.0_ordnat\HerosFall_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading E:\Castle_Raiders\Pacman_Castle_Raider\Pac-Man_2015_V_1.0_ordnat\HerosFall_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: E:\Castle_Raiders\Pacman_Castle_Raider\Pac-Man_2015_V_1.0_ordnat\HerosFall_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading E:\Castle_Raiders\Pacman_Castle_Raider\Pac-Man_2015_V_1.0_ordnat\HerosFall_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: E:\Castle_Raiders\Pacman_Castle_Raider\Pac-Man_2015_V_1.0_ordnat\HerosFall_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.045 seconds
+Platform assembly: C:\Users\leafm_000\Documents\GameProjects\Pacman_Castle_Raider\Pac-Man_2015_V_1.0_ordnat\HerosFall_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\leafm_000\Documents\GameProjects\Pacman_Castle_Raider\Pac-Man_2015_V_1.0_ordnat\HerosFall_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\leafm_000\Documents\GameProjects\Pacman_Castle_Raider\Pac-Man_2015_V_1.0_ordnat\HerosFall_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\leafm_000\Documents\GameProjects\Pacman_Castle_Raider\Pac-Man_2015_V_1.0_ordnat\HerosFall_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\leafm_000\Documents\GameProjects\Pacman_Castle_Raider\Pac-Man_2015_V_1.0_ordnat\HerosFall_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\leafm_000\Documents\GameProjects\Pacman_Castle_Raider\Pac-Man_2015_V_1.0_ordnat\HerosFall_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\leafm_000\Documents\GameProjects\Pacman_Castle_Raider\Pac-Man_2015_V_1.0_ordnat\HerosFall_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\leafm_000\Documents\GameProjects\Pacman_Castle_Raider\Pac-Man_2015_V_1.0_ordnat\HerosFall_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\leafm_000\Documents\GameProjects\Pacman_Castle_Raider\Pac-Man_2015_V_1.0_ordnat\HerosFall_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.420 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-Platform assembly: E:\Castle_Raiders\Pacman_Castle_Raider\Pac-Man_2015_V_1.0_ordnat\HerosFall_Data\Managed\System.dll (this message is harmless)
-20 points on this level
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+Platform assembly: C:\Users\leafm_000\Documents\GameProjects\Pacman_Castle_Raider\Pac-Man_2015_V_1.0_ordnat\HerosFall_Data\Managed\System.dll (this message is harmless)
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 10ee0 -> priority: 1 
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.029680 ms
+System memory in use before: 29.2 MB.
+System memory in use after: 29.2 MB.
 
-Setting up 2 worker threads for Enlighten.
-  Thread -> id: 1578 -> priority: 1 
-  Thread -> id: 2e38 -> priority: 1 
-NullReferenceException: Object reference not set to an instance of an object
-  at MapTransition.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1514.
+Total: 0.525781 ms (FindLiveObjects: 0.068113 ms CreateObjectMapping: 0.027058 ms MarkObjects: 0.402150 ms  DeleteObjects: 0.027058 ms)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at MapTransition.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.194588 ms
+System memory in use before: 29.6 MB.
+System memory in use after: 29.5 MB.
 
-NullReferenceException: Object reference not set to an instance of an object
-  at MapTransition.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1691.
+Total: 0.441805 ms (FindLiveObjects: 0.073245 ms CreateObjectMapping: 0.023326 ms MarkObjects: 0.315842 ms  DeleteObjects: 0.027525 ms)
 
+Waiting for finish

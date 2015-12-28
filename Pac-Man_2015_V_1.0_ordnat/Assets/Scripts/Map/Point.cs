@@ -57,7 +57,7 @@ public class Point : MonoBehaviour
                 int points = GameObject.FindGameObjectsWithTag("Point").Length;
 
                 //If this is the last point on the map and hero picks it up, give Hero the key
-                if (points == 1 && mapRequiresKey)
+                if (points == 1)
                 {
                     GameObject _key = Instantiate(key, new Vector3(transform.position.x, transform.position.y + 1, transform.position.z), Quaternion.identity) as GameObject;
                     _key.transform.parent = col.gameObject.transform;

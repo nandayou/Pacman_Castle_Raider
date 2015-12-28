@@ -2,20 +2,22 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class MapTransition : MonoBehaviour {
+public class MapTransition : MonoBehaviour
+{
 
     public Image fadeColor;
     public Image storyImage;
     public Text pressSpace;
 
     bool mapEnd;
-    public Object nextLevel;
+    public int nextLevelIndex;
 
-    //Starts by hiding the pressspace text and storyimage
+    //Starts by hiding the pressSpace text and storyimage
     void Start()
     {
         pressSpace.CrossFadeAlpha(0f, 0f, true);
         storyImage.CrossFadeAlpha(0f, 0f, true);
+        nextLevelIndex = Application.loadedLevel + 1;
     }
 
     //Checks exit is reached and waits for player to press space. When pressed, load next scene
@@ -23,16 +25,17 @@ public class MapTransition : MonoBehaviour {
     {
         if (mapEnd && Input.GetKeyDown(KeyCode.Space))
         {
-            Application.LoadLevel(nextLevel.name);
-            mapEnd = false;
             Time.timeScale = 1;
+            Application.LoadLevel(nextLevelIndex);
+
+            mapEnd = false;
         }
     }
 
     //If player collides with trigger, the map is over and time is paused
     void OnTriggerEnter(Collider col)
     {
-        if(col.gameObject.tag == "Player")
+        if (col.gameObject.tag == "Player")
         {
             mapEnd = true;
             Time.timeScale = 0;
@@ -41,7 +44,7 @@ public class MapTransition : MonoBehaviour {
 
     void OnGUI()
     {
-        
+
         GUI.depth = -1000;
 
         //Handles the fade of everything, including fade in and fade out
@@ -54,8 +57,6 @@ public class MapTransition : MonoBehaviour {
             fadeColor.CrossFadeAlpha(2f, 2f, true);
             storyImage.CrossFadeAlpha(2f, 2f, true);
             pressSpace.CrossFadeAlpha(2f, 2f, true);
-            
-
         }
     }
 }
