@@ -35,6 +35,12 @@ public class Point : MonoBehaviour
         //Rotates the game object
         if (_visible)
             transform.Rotate(Vector3.up * Time.deltaTime * rotationSpeed);
+
+        //In case gameObject falls through the world, destroy it
+        if (transform.position.y < -1f)
+        {
+            Destroy(gameObject);
+        }
     }
 
     //if player collides with the trigger, move towards the player and then destroy when close enough.
@@ -51,7 +57,7 @@ public class Point : MonoBehaviour
                 int points = GameObject.FindGameObjectsWithTag("Point").Length;
 
                 //If this is the last point on the map and hero picks it up, give Hero the key
-                if (points == 1 && mapRequiresKey)
+                if (points == 1)
                 {
                     GameObject _key = Instantiate(key, new Vector3(transform.position.x, transform.position.y + 1, transform.position.z), Quaternion.identity) as GameObject;
                     _key.transform.parent = col.gameObject.transform;
