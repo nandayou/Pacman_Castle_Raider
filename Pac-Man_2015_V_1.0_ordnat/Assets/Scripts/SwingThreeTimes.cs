@@ -21,7 +21,7 @@ public class SwingThreeTimes : MonoBehaviour {
 	{
 		if(swingpower >= 1) 
 		{
-				GetComponent<Animation> ().Play ();
+				GetComponent<Animation> ().Play();
 				swingpower -= 1;
 				yield return new WaitForSeconds(2f);
 		}
