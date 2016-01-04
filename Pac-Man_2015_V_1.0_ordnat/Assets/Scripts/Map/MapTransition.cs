@@ -5,9 +5,9 @@ using System.Collections;
 public class MapTransition : MonoBehaviour
 {
 
-    public Image fadeColor;
-    public Image storyImage;
-    public Text pressSpace;
+    Image background;
+    Image storyImage;
+    Text storyText;
 
     bool mapEnd;
     public int nextLevelIndex;
@@ -15,7 +15,11 @@ public class MapTransition : MonoBehaviour
     //Starts by hiding the pressSpace text and storyimage
     void Start()
     {
-        pressSpace.CrossFadeAlpha(0f, 0f, true);
+        background = GameObject.Find("Background").GetComponent<Image>();
+        storyImage = GameObject.Find("StoryImage").GetComponent<Image>();
+        storyText = GameObject.Find("StoryText").GetComponent<Text>();
+
+        storyText.CrossFadeAlpha(0f, 0f, true);
         storyImage.CrossFadeAlpha(0f, 0f, true);
         nextLevelIndex = Application.loadedLevel + 1;
     }
@@ -50,13 +54,13 @@ public class MapTransition : MonoBehaviour
         //Handles the fade of everything, including fade in and fade out
         if (!mapEnd)
         {
-            fadeColor.CrossFadeAlpha(0f, 2f, true);
+            background.CrossFadeAlpha(0f, 2f, true);
         }
         else if (mapEnd)
         {
-            fadeColor.CrossFadeAlpha(2f, 2f, true);
+            background.CrossFadeAlpha(2f, 2f, true);
             storyImage.CrossFadeAlpha(2f, 2f, true);
-            pressSpace.CrossFadeAlpha(2f, 2f, true);
+            storyText.CrossFadeAlpha(2f, 2f, true);
         }
     }
 }
