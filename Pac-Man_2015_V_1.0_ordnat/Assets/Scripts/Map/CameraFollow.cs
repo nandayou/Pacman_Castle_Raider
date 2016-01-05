@@ -21,8 +21,8 @@ public class CameraFollow : MonoBehaviour
 
     void FixedUpdate()
     {
-        //If moveDir from the movementscript and hero isnt moving and the player press E the camera will zoom out.
-        if (hero.moveDir == Vector3.zero && Input.GetKey(KeyCode.E))
+        //If moveDir from the movementscript and hero isn't moving and the player press E the camera will zoom out.
+        if (Input.GetKey(KeyCode.E))
         {
             transform.position = Vector3.Lerp(transform.position, new Vector3(centerPos.transform.position.x, centerPos.transform.position.y + zoomAmount, centerPos.transform.position.z - cameraPos.transform.position.y - 2), Time.deltaTime * (smooth / 5));
         }
