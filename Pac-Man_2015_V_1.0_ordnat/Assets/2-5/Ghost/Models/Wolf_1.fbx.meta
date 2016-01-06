@@ -1,57 +1,54 @@
 fileFormatVersion: 2
-guid: f149a419f094e844b86dc0187b206506
-timeCreated: 1451756276
+guid: 7403a87f30100744a838293c12e8aa55
+timeCreated: 1452090407
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
     100000: Head
-    100002: Jaw_Under
+    100002: Jaw_Lower
     100004: Jaw_Upper
     100006: Left_Back_1
     100008: Left_Back_2
     100010: Left_Back_3
-    100012: Left_Fort_1
-    100014: Left_Fort_2
-    100016: Left_Fort_3
+    100012: Left_Front_1
+    100014: Left_Front_2
+    100016: Left_Front_3
     100018: Master
     100020: pCube2
     100022: polySurface2
     100024: Right_Back_1
     100026: Right_Back_2
     100028: Right_Back_3
-    100030: Right_Fort_1
-    100032: Right_Fort_2
-    100034: Right_Fort_3
-    100036: Rump
-    100038: Tail
-    100040: //RootNode
+    100030: Right_Front_1
+    100032: Right_Front_2
+    100034: Right_Front_3
+    100036: Tail
+    100038: //RootNode
     400000: Head
-    400002: Jaw_Under
+    400002: Jaw_Lower
     400004: Jaw_Upper
     400006: Left_Back_1
     400008: Left_Back_2
     400010: Left_Back_3
-    400012: Left_Fort_1
-    400014: Left_Fort_2
-    400016: Left_Fort_3
+    400012: Left_Front_1
+    400014: Left_Front_2
+    400016: Left_Front_3
     400018: Master
     400020: pCube2
     400022: polySurface2
     400024: Right_Back_1
     400026: Right_Back_2
     400028: Right_Back_3
-    400030: Right_Fort_1
-    400032: Right_Fort_2
-    400034: Right_Fort_3
-    400036: Rump
-    400038: Tail
-    400040: //RootNode
-    2300000: polySurface2
-    3300000: polySurface2
+    400030: Right_Front_1
+    400032: Right_Front_2
+    400034: Right_Front_3
+    400036: Tail
+    400038: //RootNode
     4300000: polySurface2
     7400000: Take 001
     9500000: //RootNode
+    13700000: polySurface2
   materials:
     importMaterials: 1
     materialName: 0
