@@ -1,0 +1,235 @@
+fileFormatVersion: 2
+guid: 9802e3e89008cc946a01d586f35e0151
+timeCreated: 1452071725
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: glove_left2
+    100002: glove_left3
+    100004: group1
+    100006: group2
+    100008: Left_Arm
+    100010: Left_Finger_A_1
+    100012: Left_Finger_A_2
+    100014: Left_Finger_A_3
+    100016: Left_Finger_B_1
+    100018: Left_Finger_B_2
+    100020: Left_Finger_B_3
+    100022: Left_Finger_C_1
+    100024: Left_Finger_C_2
+    100026: Left_Finger_C_3
+    100028: Left_Finger_D_1
+    100030: Left_Finger_D_2
+    100032: Left_Finger_D_3
+    100034: Left_Palm
+    100036: Left_Thumb_1
+    100038: Left_Thumb_2
+    100040: Master
+    100042: //RootNode
+    100044: pCube1
+    100046: pCube2
+    100048: pCube3
+    100050: pCube4
+    100052: pCylinder2
+    100054: pCylinder3
+    100056: polySurface1
+    100058: polySurface1 1
+    100060: polySurface10
+    100062: polySurface11
+    100064: polySurface11 1
+    100066: polySurface12
+    100068: polySurface13
+    100070: polySurface14
+    100072: polySurface15
+    100074: polySurface16
+    100076: polySurface17
+    100078: polySurface18
+    100080: polySurface18 1
+    100082: polySurface2
+    100084: polySurface20
+    100086: polySurface21
+    100088: polySurface22
+    100090: polySurface23
+    100092: polySurface3
+    100094: polySurface4
+    100096: polySurface7
+    100098: pSphere1
+    100100: transform1
+    100102: transform19
+    100104: transform2
+    100106: transform23
+    100108: transform24
+    100110: transform25
+    100112: transform26
+    100114: transform27
+    100116: transform28
+    100118: transform29
+    100120: transform3
+    100122: transform30
+    100124: transform31
+    100126: transform32
+    100128: transform33
+    100130: transform34
+    100132: transform35
+    100134: transform36
+    100136: transform37
+    100138: transform38
+    100140: transform39
+    100142: transform4
+    100144: transform40
+    100146: transform41
+    100148: transform42
+    100150: transform5
+    100152: transform6
+    100154: transform7
+    100156: transform8
+    100158: transform9
+    400000: glove_left2
+    400002: glove_left3
+    400004: group1
+    400006: group2
+    400008: Left_Arm
+    400010: Left_Finger_A_1
+    400012: Left_Finger_A_2
+    400014: Left_Finger_A_3
+    400016: Left_Finger_B_1
+    400018: Left_Finger_B_2
+    400020: Left_Finger_B_3
+    400022: Left_Finger_C_1
+    400024: Left_Finger_C_2
+    400026: Left_Finger_C_3
+    400028: Left_Finger_D_1
+    400030: Left_Finger_D_2
+    400032: Left_Finger_D_3
+    400034: Left_Palm
+    400036: Left_Thumb_1
+    400038: Left_Thumb_2
+    400040: Master
+    400042: //RootNode
+    400044: pCube1
+    400046: pCube2
+    400048: pCube3
+    400050: pCube4
+    400052: pCylinder2
+    400054: pCylinder3
+    400056: polySurface1
+    400058: polySurface1 1
+    400060: polySurface10
+    400062: polySurface11
+    400064: polySurface11 1
+    400066: polySurface12
+    400068: polySurface13
+    400070: polySurface14
+    400072: polySurface15
+    400074: polySurface16
+    400076: polySurface17
+    400078: polySurface18
+    400080: polySurface18 1
+    400082: polySurface2
+    400084: polySurface20
+    400086: polySurface21
+    400088: polySurface22
+    400090: polySurface23
+    400092: polySurface3
+    400094: polySurface4
+    400096: polySurface7
+    400098: pSphere1
+    400100: transform1
+    400102: transform19
+    400104: transform2
+    400106: transform23
+    400108: transform24
+    400110: transform25
+    400112: transform26
+    400114: transform27
+    400116: transform28
+    400118: transform29
+    400120: transform3
+    400122: transform30
+    400124: transform31
+    400126: transform32
+    400128: transform33
+    400130: transform34
+    400132: transform35
+    400134: transform36
+    400136: transform37
+    400138: transform38
+    400140: transform39
+    400142: transform4
+    400144: transform40
+    400146: transform41
+    400148: transform42
+    400150: transform5
+    400152: transform6
+    400154: transform7
+    400156: transform8
+    400158: transform9
+    4300000: polySurface18
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: polySurface18
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
