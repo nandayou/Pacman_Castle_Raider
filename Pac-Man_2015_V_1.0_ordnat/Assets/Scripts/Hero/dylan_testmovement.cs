@@ -14,14 +14,17 @@ public class dylan_testmovement : MonoBehaviour
 	private float _pacSize;                 //The size of the attached to Hero
 	public float delay = 3;
 	public float startTimerDelayed = 0;
+
 	GameObject hero;
 	Vector3 startPosition;
+	public SwingThreeTimes swingingPowerScript;
 	
 	void Start()
 	{
 		_pacSize = GetComponent<SphereCollider>().bounds.size.x;
 		hero = GameObject.FindGameObjectWithTag("Player");
 		startPosition = hero.transform.position;
+		swingingPowerScript = GameObject.Find("mod_pacman_Hero_40x40x40_02").GetComponent<SwingThreeTimes>();
 	}
 	
 	void Update()
@@ -89,6 +92,10 @@ public class dylan_testmovement : MonoBehaviour
 			startTimerDelayed = Time.time + delay;
 			GetComponent<Rigidbody>().velocity = Vector3.zero;
 		}
+
+//		if (col.gameObject.tag == "PowerUp") {
+//			swingingPowerScript.ICanSwingThreeTimes();
+//		}
 	}
 
 	void OnGUI()

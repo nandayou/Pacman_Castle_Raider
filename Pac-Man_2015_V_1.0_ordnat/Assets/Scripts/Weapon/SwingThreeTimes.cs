@@ -4,11 +4,20 @@ using System.Collections;
 public class SwingThreeTimes : MonoBehaviour {
 
 	public int swingpower = 0;
+	public GameObject redParticle;
 
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.F)) 
 		{
 			StartCoroutine (StartSwing ());
+		}
+
+		if (swingpower == 0) {
+			redParticle.GetComponent<ParticleSystem>().enableEmission = false;
+		}
+
+		if (swingpower >= 1) {
+			redParticle.GetComponent<ParticleSystem>().enableEmission = true;
 		}
 	}
 
