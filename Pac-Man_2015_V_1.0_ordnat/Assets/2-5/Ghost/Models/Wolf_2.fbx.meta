@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 5b53baa2f02fb9649a1f34c491235d01
-timeCreated: 1451756276
+guid: 666389da6e1dbbf499ee80e7dca7d719
+timeCreated: 1452083665
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
@@ -53,11 +53,10 @@ ModelImporter:
     400042: Tail_Joint
     400044: Upper_Jaw_Joint
     400046: //RootNode
-    2300000: polySurface2
-    3300000: polySurface2
     4300000: polySurface2
     7400000: Take 001
     9500000: //RootNode
+    13700000: polySurface2
   materials:
     importMaterials: 1
     materialName: 0
