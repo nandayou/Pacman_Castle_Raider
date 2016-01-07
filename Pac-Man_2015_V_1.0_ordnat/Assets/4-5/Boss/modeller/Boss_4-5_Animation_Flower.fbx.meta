@@ -1,0 +1,399 @@
+fileFormatVersion: 2
+guid: 2544d7018d934ce4d8a0227540c773c5
+timeCreated: 1452186653
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: bottom
+    100004: DoubleTentacle
+    100006: DoubleTentacle_1_1
+    100008: DoubleTentacle_1_10
+    100010: DoubleTentacle_1_11
+    100012: DoubleTentacle_1_12
+    100014: DoubleTentacle_1_13
+    100016: DoubleTentacle_1_14
+    100018: DoubleTentacle_1_15
+    100020: DoubleTentacle_1_2
+    100022: DoubleTentacle_1_3
+    100024: DoubleTentacle_1_4
+    100026: DoubleTentacle_1_5
+    100028: DoubleTentacle_1_6
+    100030: DoubleTentacle_1_7
+    100032: DoubleTentacle_1_8
+    100034: DoubleTentacle_1_9
+    100036: DoubleTentacle_2_1
+    100038: DoubleTentacle_2_10
+    100040: DoubleTentacle_2_11
+    100042: DoubleTentacle_2_12
+    100044: DoubleTentacle_2_13
+    100046: DoubleTentacle_2_14
+    100048: DoubleTentacle_2_15
+    100050: DoubleTentacle_2_16
+    100052: DoubleTentacle_2_17
+    100054: DoubleTentacle_2_18
+    100056: DoubleTentacle_2_2
+    100058: DoubleTentacle_2_3
+    100060: DoubleTentacle_2_4
+    100062: DoubleTentacle_2_5
+    100064: DoubleTentacle_2_6
+    100066: DoubleTentacle_2_7
+    100068: DoubleTentacle_2_8
+    100070: DoubleTentacle_2_9
+    100072: Downer_leaf_1
+    100074: Downer_leaf_2
+    100076: Downer_leaf_3
+    100078: Downer_leaf_4
+    100080: Downer_leaf_5
+    100082: FlowerCenter_joint
+    100084: group
+    100086: Joint_top
+    100088: Joint_top 1
+    100090: Joint_top 2
+    100092: Joint_top 3
+    100094: leaf_core
+    100096: Middle_left_leaf_1
+    100098: Middle_left_leaf_2
+    100100: Middle_left_leaf_3
+    100102: Middle_left_leaf_4
+    100104: Middle_left_leaf_5
+    100106: Middle_left_leaf_6
+    100108: Middle_right_leaf_1
+    100110: Middle_right_leaf_2
+    100112: Middle_right_leaf_3
+    100114: Middle_right_leaf_4
+    100116: Middle_right_leaf_5
+    100118: pasted__polySurface471
+    100120: pasted__polySurface472
+    100122: pasted__polySurface473
+    100124: pasted__polySurface474
+    100126: pasted__polySurface475
+    100128: pasted__polySurface476
+    100130: pasted__polySurface477
+    100132: pasted__polySurface478
+    100134: pasted__polySurface479
+    100136: pasted__polySurface480
+    100138: pasted__polySurface481
+    100140: pasted__polySurface607
+    100142: pasted__polySurface9
+    100144: Petal_1
+    100146: Petal_1 1
+    100148: Petal_1 2
+    100150: Petal_1 3
+    100152: Petal_2
+    100154: Petal_2 1
+    100156: Petal_2 2
+    100158: Petal_2 3
+    100160: Petal_3
+    100162: Petal_3 1
+    100164: Petal_3 2
+    100166: Petal_3 3
+    100168: Petal_4
+    100170: Petal_4 1
+    100172: Petal_4 2
+    100174: Petal_4 3
+    100176: Petal_5
+    100178: Petal_5 1
+    100180: Petal_5 2
+    100182: Petal_5 3
+    100184: Petal_6
+    100186: Petal_6 1
+    100188: Petal_6 2
+    100190: Petal_6 3
+    100192: Petal_base_downer_left
+    100194: Petal_base_downer_right
+    100196: Petal_base_upper_left
+    100198: Petal_base_upper_right
+    100200: Petal_top
+    100202: Petal_top 1
+    100204: Petal_top 2
+    100206: Petal_top 3
+    100208: polySurface576
+    100210: Tentacle_1
+    100212: Tentacle_1_1
+    100214: Tentacle_1_10
+    100216: Tentacle_1_11
+    100218: Tentacle_1_2
+    100220: Tentacle_1_3
+    100222: Tentacle_1_4
+    100224: Tentacle_1_5
+    100226: Tentacle_1_6
+    100228: Tentacle_1_7
+    100230: Tentacle_1_8
+    100232: Tentacle_1_9
+    100234: Tentacle_2
+    100236: Tentacle_2_1
+    100238: Tentacle_2_10
+    100240: Tentacle_2_11
+    100242: Tentacle_2_12
+    100244: Tentacle_2_13
+    100246: Tentacle_2_14
+    100248: Tentacle_2_15
+    100250: Tentacle_2_2
+    100252: Tentacle_2_3
+    100254: Tentacle_2_4
+    100256: Tentacle_2_5
+    100258: Tentacle_2_6
+    100260: Tentacle_2_7
+    100262: Tentacle_2_8
+    100264: Tentacle_2_9
+    100266: Upper_left_leaf_1
+    100268: Upper_left_leaf_2
+    100270: Upper_left_leaf_3
+    100272: Upper_left_leaf_4
+    100274: Upper_left_leaf_5
+    100276: Upper_left_leaf_6
+    100278: Upper_right_leaf_1
+    100280: Upper_right_leaf_2
+    100282: Upper_right_leaf_3
+    100284: Upper_right_leaf_4
+    100286: Upper_right_leaf_5
+    400000: //RootNode
+    400002: bottom
+    400004: DoubleTentacle
+    400006: DoubleTentacle_1_1
+    400008: DoubleTentacle_1_10
+    400010: DoubleTentacle_1_11
+    400012: DoubleTentacle_1_12
+    400014: DoubleTentacle_1_13
+    400016: DoubleTentacle_1_14
+    400018: DoubleTentacle_1_15
+    400020: DoubleTentacle_1_2
+    400022: DoubleTentacle_1_3
+    400024: DoubleTentacle_1_4
+    400026: DoubleTentacle_1_5
+    400028: DoubleTentacle_1_6
+    400030: DoubleTentacle_1_7
+    400032: DoubleTentacle_1_8
+    400034: DoubleTentacle_1_9
+    400036: DoubleTentacle_2_1
+    400038: DoubleTentacle_2_10
+    400040: DoubleTentacle_2_11
+    400042: DoubleTentacle_2_12
+    400044: DoubleTentacle_2_13
+    400046: DoubleTentacle_2_14
+    400048: DoubleTentacle_2_15
+    400050: DoubleTentacle_2_16
+    400052: DoubleTentacle_2_17
+    400054: DoubleTentacle_2_18
+    400056: DoubleTentacle_2_2
+    400058: DoubleTentacle_2_3
+    400060: DoubleTentacle_2_4
+    400062: DoubleTentacle_2_5
+    400064: DoubleTentacle_2_6
+    400066: DoubleTentacle_2_7
+    400068: DoubleTentacle_2_8
+    400070: DoubleTentacle_2_9
+    400072: Downer_leaf_1
+    400074: Downer_leaf_2
+    400076: Downer_leaf_3
+    400078: Downer_leaf_4
+    400080: Downer_leaf_5
+    400082: FlowerCenter_joint
+    400084: group
+    400086: Joint_top
+    400088: Joint_top 1
+    400090: Joint_top 2
+    400092: Joint_top 3
+    400094: leaf_core
+    400096: Middle_left_leaf_1
+    400098: Middle_left_leaf_2
+    400100: Middle_left_leaf_3
+    400102: Middle_left_leaf_4
+    400104: Middle_left_leaf_5
+    400106: Middle_left_leaf_6
+    400108: Middle_right_leaf_1
+    400110: Middle_right_leaf_2
+    400112: Middle_right_leaf_3
+    400114: Middle_right_leaf_4
+    400116: Middle_right_leaf_5
+    400118: pasted__polySurface471
+    400120: pasted__polySurface472
+    400122: pasted__polySurface473
+    400124: pasted__polySurface474
+    400126: pasted__polySurface475
+    400128: pasted__polySurface476
+    400130: pasted__polySurface477
+    400132: pasted__polySurface478
+    400134: pasted__polySurface479
+    400136: pasted__polySurface480
+    400138: pasted__polySurface481
+    400140: pasted__polySurface607
+    400142: pasted__polySurface9
+    400144: Petal_1
+    400146: Petal_1 1
+    400148: Petal_1 2
+    400150: Petal_1 3
+    400152: Petal_2
+    400154: Petal_2 1
+    400156: Petal_2 2
+    400158: Petal_2 3
+    400160: Petal_3
+    400162: Petal_3 1
+    400164: Petal_3 2
+    400166: Petal_3 3
+    400168: Petal_4
+    400170: Petal_4 1
+    400172: Petal_4 2
+    400174: Petal_4 3
+    400176: Petal_5
+    400178: Petal_5 1
+    400180: Petal_5 2
+    400182: Petal_5 3
+    400184: Petal_6
+    400186: Petal_6 1
+    400188: Petal_6 2
+    400190: Petal_6 3
+    400192: Petal_base_downer_left
+    400194: Petal_base_downer_right
+    400196: Petal_base_upper_left
+    400198: Petal_base_upper_right
+    400200: Petal_top
+    400202: Petal_top 1
+    400204: Petal_top 2
+    400206: Petal_top 3
+    400208: polySurface576
+    400210: Tentacle_1
+    400212: Tentacle_1_1
+    400214: Tentacle_1_10
+    400216: Tentacle_1_11
+    400218: Tentacle_1_2
+    400220: Tentacle_1_3
+    400222: Tentacle_1_4
+    400224: Tentacle_1_5
+    400226: Tentacle_1_6
+    400228: Tentacle_1_7
+    400230: Tentacle_1_8
+    400232: Tentacle_1_9
+    400234: Tentacle_2
+    400236: Tentacle_2_1
+    400238: Tentacle_2_10
+    400240: Tentacle_2_11
+    400242: Tentacle_2_12
+    400244: Tentacle_2_13
+    400246: Tentacle_2_14
+    400248: Tentacle_2_15
+    400250: Tentacle_2_2
+    400252: Tentacle_2_3
+    400254: Tentacle_2_4
+    400256: Tentacle_2_5
+    400258: Tentacle_2_6
+    400260: Tentacle_2_7
+    400262: Tentacle_2_8
+    400264: Tentacle_2_9
+    400266: Upper_left_leaf_1
+    400268: Upper_left_leaf_2
+    400270: Upper_left_leaf_3
+    400272: Upper_left_leaf_4
+    400274: Upper_left_leaf_5
+    400276: Upper_left_leaf_6
+    400278: Upper_right_leaf_1
+    400280: Upper_right_leaf_2
+    400282: Upper_right_leaf_3
+    400284: Upper_right_leaf_4
+    400286: Upper_right_leaf_5
+    2300000: pasted__polySurface471
+    2300002: pasted__polySurface472
+    2300004: pasted__polySurface473
+    2300006: pasted__polySurface474
+    2300008: pasted__polySurface475
+    2300010: pasted__polySurface476
+    2300012: pasted__polySurface477
+    2300014: pasted__polySurface478
+    2300016: pasted__polySurface479
+    2300018: pasted__polySurface480
+    2300020: pasted__polySurface481
+    2300022: pasted__polySurface607
+    3300000: pasted__polySurface471
+    3300002: pasted__polySurface472
+    3300004: pasted__polySurface473
+    3300006: pasted__polySurface474
+    3300008: pasted__polySurface475
+    3300010: pasted__polySurface476
+    3300012: pasted__polySurface477
+    3300014: pasted__polySurface478
+    3300016: pasted__polySurface479
+    3300018: pasted__polySurface480
+    3300020: pasted__polySurface481
+    3300022: pasted__polySurface607
+    4300000: polySurface576
+    4300002: pasted__polySurface471
+    4300004: pasted__polySurface472
+    4300006: pasted__polySurface473
+    4300008: pasted__polySurface474
+    4300010: pasted__polySurface475
+    4300012: pasted__polySurface476
+    4300014: pasted__polySurface477
+    4300016: pasted__polySurface478
+    4300018: pasted__polySurface479
+    4300020: pasted__polySurface480
+    4300022: pasted__polySurface481
+    4300024: pasted__polySurface607
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: polySurface576
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
