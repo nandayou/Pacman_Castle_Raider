@@ -1,0 +1,517 @@
+fileFormatVersion: 2
+guid: d5085fc89a1f09b45a9d8765c4eb5d4c
+timeCreated: 1452242085
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: glove_left2
+    100002: glove_left3
+    100004: group
+    100006: group1
+    100008: group2
+    100010: knight2
+    100012: Lance
+    100014: Left
+    100016: Left_2
+    100018: Master
+    100020: Pacman_07:glove_left2
+    100022: Pacman_07:glove_left3
+    100024: Pacman_07:group1
+    100026: Pacman_07:group2
+    100028: Pacman_07:pCube1
+    100030: Pacman_07:pCube2
+    100032: Pacman_07:pCube3
+    100034: Pacman_07:pCube4
+    100036: Pacman_07:pCylinder2
+    100038: Pacman_07:pCylinder3
+    100040: Pacman_07:polySurface1
+    100042: Pacman_07:polySurface1 1
+    100044: Pacman_07:polySurface10
+    100046: Pacman_07:polySurface2
+    100048: Pacman_07:polySurface3
+    100050: Pacman_07:polySurface4
+    100052: Pacman_07:polySurface7
+    100054: Pacman_07:pSphere1
+    100056: Pacman_07:transform1
+    100058: Pacman_07:transform19
+    100060: Pacman_07:transform2
+    100062: Pacman_07:transform23
+    100064: Pacman_07:transform24
+    100066: Pacman_07:transform25
+    100068: Pacman_07:transform26
+    100070: Pacman_07:transform27
+    100072: Pacman_07:transform28
+    100074: Pacman_07:transform3
+    100076: Pacman_07:transform4
+    100078: Pacman_07:transform5
+    100080: Pacman_07:transform6
+    100082: Pacman_07:transform7
+    100084: Pacman_07:transform8
+    100086: Pacman_07:transform9
+    100088: //RootNode
+    100090: pasted__group3
+    100092: pasted__group3 1
+    100094: pasted__polySurface12
+    100096: pasted__polySurface13
+    100098: pasted__polySurface14
+    100100: pasted__polySurface15
+    100102: pasted__polySurface5
+    100104: pasted__transform23
+    100106: pasted__transform24
+    100108: pasted__transform25
+    100110: pasted__transform26
+    100112: pasted__transform27
+    100114: pasted__transform28
+    100116: pCube1
+    100118: pCube2
+    100120: pCube3
+    100122: pCube4
+    100124: pCylinder2
+    100126: pCylinder3
+    100128: polySurface1
+    100130: polySurface1 1
+    100132: polySurface10
+    100134: polySurface11
+    100136: polySurface12
+    100138: polySurface13
+    100140: polySurface14
+    100142: polySurface15
+    100144: polySurface16
+    100146: polySurface2
+    100148: polySurface3
+    100150: polySurface4
+    100152: polySurface7
+    100154: pSphere1
+    100156: Right
+    100158: transform1
+    100160: transform19
+    100162: transform2
+    100164: transform23
+    100166: transform24
+    100168: transform25
+    100170: transform26
+    100172: transform27
+    100174: transform28
+    100176: transform29
+    100178: transform3
+    100180: transform30
+    100182: transform31
+    100184: transform32
+    100186: transform33
+    100188: transform34
+    100190: transform35
+    100192: transform36
+    100194: transform37
+    100196: transform4
+    100198: transform5
+    100200: transform6
+    100202: transform7
+    100204: transform8
+    100206: transform9
+    400000: glove_left2
+    400002: glove_left3
+    400004: group
+    400006: group1
+    400008: group2
+    400010: knight2
+    400012: Lance
+    400014: Left
+    400016: Left_2
+    400018: Master
+    400020: Pacman_07:glove_left2
+    400022: Pacman_07:glove_left3
+    400024: Pacman_07:group1
+    400026: Pacman_07:group2
+    400028: Pacman_07:pCube1
+    400030: Pacman_07:pCube2
+    400032: Pacman_07:pCube3
+    400034: Pacman_07:pCube4
+    400036: Pacman_07:pCylinder2
+    400038: Pacman_07:pCylinder3
+    400040: Pacman_07:polySurface1
+    400042: Pacman_07:polySurface1 1
+    400044: Pacman_07:polySurface10
+    400046: Pacman_07:polySurface2
+    400048: Pacman_07:polySurface3
+    400050: Pacman_07:polySurface4
+    400052: Pacman_07:polySurface7
+    400054: Pacman_07:pSphere1
+    400056: Pacman_07:transform1
+    400058: Pacman_07:transform19
+    400060: Pacman_07:transform2
+    400062: Pacman_07:transform23
+    400064: Pacman_07:transform24
+    400066: Pacman_07:transform25
+    400068: Pacman_07:transform26
+    400070: Pacman_07:transform27
+    400072: Pacman_07:transform28
+    400074: Pacman_07:transform3
+    400076: Pacman_07:transform4
+    400078: Pacman_07:transform5
+    400080: Pacman_07:transform6
+    400082: Pacman_07:transform7
+    400084: Pacman_07:transform8
+    400086: Pacman_07:transform9
+    400088: //RootNode
+    400090: pasted__group3
+    400092: pasted__group3 1
+    400094: pasted__polySurface12
+    400096: pasted__polySurface13
+    400098: pasted__polySurface14
+    400100: pasted__polySurface15
+    400102: pasted__polySurface5
+    400104: pasted__transform23
+    400106: pasted__transform24
+    400108: pasted__transform25
+    400110: pasted__transform26
+    400112: pasted__transform27
+    400114: pasted__transform28
+    400116: pCube1
+    400118: pCube2
+    400120: pCube3
+    400122: pCube4
+    400124: pCylinder2
+    400126: pCylinder3
+    400128: polySurface1
+    400130: polySurface1 1
+    400132: polySurface10
+    400134: polySurface11
+    400136: polySurface12
+    400138: polySurface13
+    400140: polySurface14
+    400142: polySurface15
+    400144: polySurface16
+    400146: polySurface2
+    400148: polySurface3
+    400150: polySurface4
+    400152: polySurface7
+    400154: pSphere1
+    400156: Right
+    400158: transform1
+    400160: transform19
+    400162: transform2
+    400164: transform23
+    400166: transform24
+    400168: transform25
+    400170: transform26
+    400172: transform27
+    400174: transform28
+    400176: transform29
+    400178: transform3
+    400180: transform30
+    400182: transform31
+    400184: transform32
+    400186: transform33
+    400188: transform34
+    400190: transform35
+    400192: transform36
+    400194: transform37
+    400196: transform4
+    400198: transform5
+    400200: transform6
+    400202: transform7
+    400204: transform8
+    400206: transform9
+    4300000: knight2
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: knight2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: group
+        weight: 1
+      - path: group/Pacman_07:group1
+        weight: 1
+      - path: group/Pacman_07:group1/Pacman_07:glove_left2
+        weight: 1
+      - path: group/Pacman_07:group1/Pacman_07:glove_left2/Pacman_07:transform3
+        weight: 1
+      - path: group/Pacman_07:group1/Pacman_07:glove_left3
+        weight: 1
+      - path: group/Pacman_07:group1/Pacman_07:glove_left3/Pacman_07:transform2
+        weight: 1
+      - path: group/Pacman_07:group1/Pacman_07:pCube1
+        weight: 1
+      - path: group/Pacman_07:group1/Pacman_07:pCube1/Pacman_07:transform8
+        weight: 1
+      - path: group/Pacman_07:group1/Pacman_07:pCube2
+        weight: 1
+      - path: group/Pacman_07:group1/Pacman_07:pCube2/Pacman_07:transform7
+        weight: 1
+      - path: group/Pacman_07:group1/Pacman_07:pCube3
+        weight: 1
+      - path: group/Pacman_07:group1/Pacman_07:pCube3/Pacman_07:transform6
+        weight: 1
+      - path: group/Pacman_07:group1/Pacman_07:pCube4
+        weight: 1
+      - path: group/Pacman_07:group1/Pacman_07:pCube4/Pacman_07:transform1
+        weight: 1
+      - path: group/Pacman_07:group1/Pacman_07:pCylinder2
+        weight: 1
+      - path: group/Pacman_07:group1/Pacman_07:pCylinder2/Pacman_07:transform5
+        weight: 1
+      - path: group/Pacman_07:group1/Pacman_07:pCylinder3
+        weight: 1
+      - path: group/Pacman_07:group1/Pacman_07:pCylinder3/Pacman_07:transform4
+        weight: 1
+      - path: group/Pacman_07:group1/Pacman_07:pSphere1
+        weight: 1
+      - path: group/Pacman_07:group1/Pacman_07:pSphere1/Pacman_07:transform9
+        weight: 1
+      - path: group/Pacman_07:group2
+        weight: 1
+      - path: group/Pacman_07:group2/Pacman_07:polySurface1 1
+        weight: 1
+      - path: group/Pacman_07:group2/Pacman_07:polySurface1 1/Pacman_07:transform28
+        weight: 1
+      - path: group/Pacman_07:group2/Pacman_07:polySurface2
+        weight: 1
+      - path: group/Pacman_07:group2/Pacman_07:polySurface2/Pacman_07:transform27
+        weight: 1
+      - path: group/Pacman_07:group2/Pacman_07:polySurface3
+        weight: 1
+      - path: group/Pacman_07:group2/Pacman_07:polySurface3/Pacman_07:transform26
+        weight: 1
+      - path: group/Pacman_07:group2/Pacman_07:polySurface4
+        weight: 1
+      - path: group/Pacman_07:group2/Pacman_07:polySurface4/Pacman_07:transform25
+        weight: 1
+      - path: group/Pacman_07:group2/Pacman_07:polySurface7
+        weight: 1
+      - path: group/Pacman_07:group2/Pacman_07:polySurface7/Pacman_07:transform24
+        weight: 1
+      - path: group/Pacman_07:group2/Pacman_07:polySurface10
+        weight: 1
+      - path: group/Pacman_07:group2/Pacman_07:polySurface10/Pacman_07:transform23
+        weight: 1
+      - path: group/Pacman_07:group2/Pacman_07:transform19
+        weight: 1
+      - path: group/Pacman_07:polySurface1
+        weight: 1
+      - path: group/Pacman_07:polySurface1/pasted__polySurface12
+        weight: 1
+      - path: group/Pacman_07:polySurface1/pasted__polySurface12/pasted__transform24
+        weight: 1
+      - path: group/Pacman_07:polySurface1/pasted__transform23
+        weight: 1
+      - path: group/pasted__group3 1
+        weight: 1
+      - path: group/pasted__group3 1/transform33
+        weight: 1
+      - path: group/pasted__polySurface5
+        weight: 1
+      - path: group/pasted__polySurface5/pasted__transform25
+        weight: 1
+      - path: group/pasted__polySurface13
+        weight: 1
+      - path: group/pasted__polySurface13/pasted__polySurface14
+        weight: 1
+      - path: group/pasted__polySurface13/pasted__polySurface14/pasted__transform28
+        weight: 1
+      - path: group/pasted__polySurface13/pasted__polySurface15
+        weight: 1
+      - path: group/pasted__polySurface13/pasted__polySurface15/pasted__transform27
+        weight: 1
+      - path: group/pasted__polySurface13/pasted__transform26
+        weight: 1
+      - path: group1
+        weight: 1
+      - path: group1/glove_left2
+        weight: 1
+      - path: group1/glove_left2/transform3
+        weight: 1
+      - path: group1/glove_left3
+        weight: 1
+      - path: group1/glove_left3/transform2
+        weight: 1
+      - path: group1/pCube1
+        weight: 1
+      - path: group1/pCube1/transform8
+        weight: 1
+      - path: group1/pCube2
+        weight: 1
+      - path: group1/pCube2/transform7
+        weight: 1
+      - path: group1/pCube3
+        weight: 1
+      - path: group1/pCube3/transform6
+        weight: 1
+      - path: group1/pCube4
+        weight: 1
+      - path: group1/pCube4/transform1
+        weight: 1
+      - path: group1/pCylinder2
+        weight: 1
+      - path: group1/pCylinder2/transform5
+        weight: 1
+      - path: group1/pCylinder3
+        weight: 1
+      - path: group1/pCylinder3/transform4
+        weight: 1
+      - path: group1/pSphere1
+        weight: 1
+      - path: group1/pSphere1/transform9
+        weight: 1
+      - path: group2
+        weight: 1
+      - path: group2/polySurface1 1
+        weight: 1
+      - path: group2/polySurface1 1/transform28
+        weight: 1
+      - path: group2/polySurface2
+        weight: 1
+      - path: group2/polySurface2/transform27
+        weight: 1
+      - path: group2/polySurface3
+        weight: 1
+      - path: group2/polySurface3/transform26
+        weight: 1
+      - path: group2/polySurface4
+        weight: 1
+      - path: group2/polySurface4/transform25
+        weight: 1
+      - path: group2/polySurface7
+        weight: 1
+      - path: group2/polySurface7/transform24
+        weight: 1
+      - path: group2/polySurface10
+        weight: 1
+      - path: group2/polySurface10/transform23
+        weight: 1
+      - path: group2/transform19
+        weight: 1
+      - path: knight2
+        weight: 1
+      - path: Master
+        weight: 1
+      - path: Master/Left
+        weight: 1
+      - path: Master/Left/Left_2
+        weight: 1
+      - path: Master/Left/Left_2/Lance
+        weight: 1
+      - path: Master/Right
+        weight: 1
+      - path: pasted__group3
+        weight: 1
+      - path: pasted__group3/transform34
+        weight: 1
+      - path: polySurface1
+        weight: 1
+      - path: polySurface1/polySurface11
+        weight: 1
+      - path: polySurface1/polySurface11/transform31
+        weight: 1
+      - path: polySurface1/polySurface12
+        weight: 1
+      - path: polySurface1/polySurface12/transform37
+        weight: 1
+      - path: polySurface1/polySurface13
+        weight: 1
+      - path: polySurface1/polySurface13/transform36
+        weight: 1
+      - path: polySurface1/polySurface14
+        weight: 1
+      - path: polySurface1/polySurface14/transform35
+        weight: 1
+      - path: polySurface1/polySurface15
+        weight: 1
+      - path: polySurface1/polySurface15/transform32
+        weight: 1
+      - path: polySurface1/polySurface16
+        weight: 1
+      - path: polySurface1/polySurface16/transform30
+        weight: 1
+      - path: polySurface1/transform29
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

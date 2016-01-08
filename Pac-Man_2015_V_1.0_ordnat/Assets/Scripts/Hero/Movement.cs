@@ -36,21 +36,28 @@ public class Movement : MonoBehaviour
 
 
         //When player uses inputs, check if there is a wall in the way and change moveDir if it isn't
-        if (Input.GetKey(KeyCode.W) && CheckIfOpen(Vector3.forward))
+        if (Input.anyKey)
         {
-            moveDir = Vector3.forward;
+            if (Input.GetKey(KeyCode.W) && CheckIfOpen(Vector3.forward))
+            {
+                moveDir = Vector3.forward;
+            }
+            if (Input.GetKey(KeyCode.S) && CheckIfOpen(Vector3.back))
+            {
+                moveDir = Vector3.back;
+            }
+            if (Input.GetKey(KeyCode.A) && CheckIfOpen(Vector3.left))
+            {
+                moveDir = Vector3.left;
+            }
+            if (Input.GetKey(KeyCode.D) && CheckIfOpen(Vector3.right))
+            {
+                moveDir = Vector3.right;
+            }
         }
-        else if (Input.GetKey(KeyCode.S) && CheckIfOpen(Vector3.back))
+        else
         {
-            moveDir = Vector3.back;
-        }
-        else if (Input.GetKey(KeyCode.A) && CheckIfOpen(Vector3.left))
-        {
-            moveDir = Vector3.left;
-        }
-        else if (Input.GetKey(KeyCode.D) && CheckIfOpen(Vector3.right))
-        {
-            moveDir = Vector3.right;
+            moveDir = Vector3.zero;
         }
     }
 
@@ -61,7 +68,7 @@ public class Movement : MonoBehaviour
         Ray checkDirMiddle = new Ray(transform.position, direction);
 
 
-        if (!Physics.Raycast(checkDirFront, _rayLength) && !Physics.Raycast(checkDirBack, _rayLength) && !Physics.Raycast(checkDirMiddle, _rayLength))
+        if (!Physics.Raycast(checkDirFront, _rayLength / 2) && !Physics.Raycast(checkDirBack, _rayLength / 2) && !Physics.Raycast(checkDirMiddle, _rayLength / 2))
         {
             return true;
         }

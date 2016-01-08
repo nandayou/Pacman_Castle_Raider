@@ -3,6 +3,13 @@ using System.Collections;
 
 public class Lancer : MonoBehaviour
 {
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            HeroStabbingGhosts();
+        }
+    }
 
     public void HeroStabbingGhosts()
     {
