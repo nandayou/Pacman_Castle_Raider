@@ -21,6 +21,8 @@ public class StartState : IGameManager
 
 
         Time.timeScale = 1;
+        if (manager.pauseMenu != null)
+            manager.pauseMenu.GetComponent<CanvasGroup>().alpha = 0;
 
         Debug.Log("Start state");
     }

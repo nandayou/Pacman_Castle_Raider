@@ -6,14 +6,15 @@ public class CameraFollow : MonoBehaviour
 
     public float smooth = 5;
     public float zoomAmount = 6;
+
     [HideInInspector]
     public Transform cameraPos;
-    Transform centerPos;
-    Movement hero;
+
+    private Transform centerPos;
+    private Movement hero;
 
     void Start()
     {
-
         if (cameraPos == null)
         {
             cameraPos = GameObject.Find("PlayerCam").transform;

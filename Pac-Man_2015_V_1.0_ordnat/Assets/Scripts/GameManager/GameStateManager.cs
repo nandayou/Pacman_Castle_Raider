@@ -7,8 +7,7 @@ public class GameStateManager : MonoBehaviour
 {
     private IGameManager activeState;
     private static GameStateManager instanceRef;
-
-    Transform mainCam;
+    private Transform mainCam;
 
     public Image background;
     public Image storyImage;
@@ -26,34 +25,20 @@ public class GameStateManager : MonoBehaviour
         {
             DestroyImmediate(gameObject);
         }
+
+        mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraFollow>().cameraPos;
+        FindUIComponents();
+
     }
 
     void Start()
     {
         activeState = new StartState(this);
-        mainCam = GameObject.Find("Main Camera").GetComponent<CameraFollow>().cameraPos;
     }
 
     void Update()
     {
-        if (background == null)
-        {
-            background = GameObject.Find("Background").GetComponent<Image>();
-        }
-        if (storyImage == null)
-        {
-            storyImage = GameObject.Find("StoryImage").GetComponent<Image>();
-        }
-        if (storyText == null)
-        {
-            storyText = GameObject.Find("StoryText").GetComponent<Text>();
-        }
-        if (pauseMenu == null)
-        {
-            pauseMenu = GameObject.Find("PauseMenu").GetComponent<CanvasGroup>();
-        }
-
-
+        FindUIComponents();
 
         if (activeState != null)
         {
@@ -76,6 +61,26 @@ public class GameStateManager : MonoBehaviour
 
     public void CameraPos(GameObject activeCam)
     {
-        GameObject.Find("Main Camera").GetComponent<CameraFollow>().cameraPos = activeCam.transform;
+        GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraFollow>().cameraPos = activeCam.transform;
+    }
+
+    public void FindUIComponents()
+    {
+        if (background == null)
+        {
+            background = GameObject.Find("Background").GetComponent<Image>();
+        }
+        if (storyImage == null)
+        {
+            storyImage = GameObject.Find("StoryImage").GetComponent<Image>();
+        }
+        if (storyText == null)
+        {
+            storyText = GameObject.Find("StoryText").GetComponent<Text>();
+        }
+        if (pauseMenu == null)
+        {
+            pauseMenu = GameObject.Find("PauseMenu").GetComponent<CanvasGroup>();
+        }
     }
 }
